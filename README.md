@@ -1,0 +1,2 @@
+# bejamas-shopping
+Altschool assignment 
