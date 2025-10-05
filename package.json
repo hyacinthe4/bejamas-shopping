@@ -1,0 +1,21 @@
+{
+  "name": "bejamas-shopping",
+  "version": "1.0.0",
+  "description": "A modern photography portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "build": "echo 'Build process not defined'"
+  },
+  "keywords": [
+    "photography",
+    "portfolio",
+    "responsive",
+    "web-design"
+  ],
+  "author": "hyacinthe",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

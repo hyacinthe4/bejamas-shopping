@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEJAMAS - Photography Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">BEJAMAS.</a>
+                <button class="cart-btn" id="cartBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Featured Product -->
+            <section class="featured-product">
+                <div class="featured-content">
+                    <h1 class="featured-title">Samurai King Reeding</h1>
+                    <button class="add-to-cart-btn featured-btn">ADD TO CART</button>
+                </div>
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=800&h=600&fit=crop" alt="Samurai King Reeding" id="featuredImg">
+                    <div class="featured-badge">Photo of the day</div>
+                </div>
+                <div class="featured-details">
+                    <h3>About the Samurai King Reeding</h3>
+                    <p>So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.</p>
+                    <div class="featured-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Size:</span>
+                            <span class="meta-value">1020 x 1020 pixel</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Size:</span>
+                            <span class="meta-value">15 MB</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Grid Layout -->
+            <div class="main-grid">
+                <!-- Sidebar Filters -->
+                <aside class="sidebar">
+                    <div class="filter-section">
+                        <div class="filter-header">
+                            <h2>Photography / <span class="filter-active">Premium Photos</span></h2>
+                            <button class="sort-btn" id="sortBtn">
+                                <span>⌄ Sort By</span>
+                                <span class="sort-value">Price</span>
+                            </button>
+                        </div>
+
+                        <!-- Category Filter -->
+                        <div class="filter-group">
+                            <h3>Category</h3>
+                            <div class="checkbox-list">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="category" value="people">
+                                    <span>People</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="category" value="premium" checked>
+                                    <span>Premium</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="category" value="pets">
+                                    <span>Pets</span>
+                                </label>
+                                <label class="checkbox-item checked">
+                                    <input type="checkbox" name="category" value="food" checked>
+                                    <span>Food</span>
+                                </label>
+                                <label class="checkbox-item checked">
+                                    <input type="checkbox" name="category" value="landmarks" checked>
+                                    <span>Landmarks</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="category" value="cities">
+                                    <span>Cities</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="category" value="nature">
+                                    <span>Nature</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Price Range Filter -->
+                        <div class="filter-group">
+                            <h3>Price range</h3>
+                            <div class="checkbox-list">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="price" value="0-20">
+                                    <span>Lower than $20</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="price" value="20-100">
+                                    <span>$20 - $100</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="price" value="100-200">
+                                    <span>$100 - $200</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="price" value="200+">
+                                    <span>More than $200</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="products-wrapper">
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Product 1 -->
+                        <div class="product-card" data-category="food" data-price="3.89">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=400&fit=crop" alt="Red Bench">
+                                <button class="add-to-cart-btn product-btn">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Red Bench</h3>
+                                <p class="product-category">Food</p>
+                                <p class="product-price">$3.89</p>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card" data-category="landmarks" data-price="93.89">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&h=400&fit=crop" alt="Egg Balloon">
+                                <button class="add-to-cart-btn product-btn">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Egg Balloon</h3>
+                                <p class="product-category">Landmarks</p>
+                                <p class="product-price">$93.89</p>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-card" data-category="landmarks" data-price="93.89">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1579546929662-711aa81148cf?w=400&h=400&fit=crop" alt="Egg Balloon">
+                                <button class="add-to-cart-btn product-btn">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Egg Balloon</h3>
+                                <p class="product-category">Landmarks</p>
+                                <p class="product-price">$93.89</p>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card" data-category="food" data-price="100.00">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=400&fit=crop" alt="Man">
+                                <button class="add-to-cart-btn product-btn">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Man</h3>
+                                <p class="product-category">Food</p>
+                                <p class="product-price">$100.00</p>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="product-card" data-category="landmarks" data-price="101.00">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=400&h=400&fit=crop" alt="Architecture">
+                                <button class="add-to-cart-btn product-btn">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Architecture</h3>
+                                <p class="product-category">Landmarks</p>
+                                <p class="product-price">$101.00</p>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 -->
+                        <div class="product-card" data-category="landmarks" data-price="101.00">
+                            <div class="product-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&h=400&fit=crop" alt="Architecture">
+                                <button class="add-to-cart-btn product-btn">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Architecture</h3>
+                                <p class="product-category">Landmarks</p>
+                                <p class="product-price">$101.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="pagination-btn" id="prevBtn">
+                            <span>‹</span>
+                        </button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">4</button>
+                        <button class="pagination-btn" id="nextBtn">
+                            <span>›</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- People Also Buy Sidebar -->
+                <aside class="people-also-buy">
+                    <h3>People also buy</h3>
+                    <div class="also-buy-grid">
+                        <div class="also-buy-item">
+                            <img src="https://images.unsplash.com/photo-1452457807411-4979b707c5be?w=200&h=200&fit=crop" alt="Product">
+                        </div>
+                        <div class="also-buy-item">
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=200&h=200&fit=crop" alt="Product">
+                        </div>
+                        <div class="also-buy-item">
+                            <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=200&h=200&fit=crop" alt="Product">
+                        </div>
+                    </div>
+                    <div class="also-buy-details">
+                        <h4>Details</h4>
+                        <p>Size: 1020 x 1020 pixel</p>
+                        <p>Size: 15 MB</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <button class="close-btn" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button class="checkout-btn">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
